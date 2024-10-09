@@ -5,6 +5,7 @@
 // Execute `rustlings hint macros3` or use the `hint` watch subcommand for a
 // hint.
 
+#[macro_use]
 mod macros {
     macro_rules! my_macro {
         () => {
@@ -12,8 +13,6 @@ mod macros {
         };
     }
 }
-
-use macros::my_macro;
 
 fn main() {
     my_macro!();
